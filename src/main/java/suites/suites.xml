@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Test suite">
+
+    <test name="Basic TestNG suite">
+        <parameter name="searchTerm" value="Making sense"></parameter>
+        <classes>
+            <class name="tests.SearchTest"></class>
+        </classes>
+    </test>
+</suite>
