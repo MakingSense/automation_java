@@ -24,4 +24,6 @@ a bolierplate (let's say) for anyone that needs to start automating web tests.
 
 PLEASE, fork this repository or commit your changes to a different repository so this framework remains unchanged for everyone.
 Yo can do that after cloning this repo with this command:
-`git remote -set-url origin NEW_REPOSITORY_ADDRESS`  
+```
+git remote -set-url origin NEW_REPOSITORY_ADDRESS
+```
