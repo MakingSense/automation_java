@@ -1,5 +1,6 @@
 package utils;
 
+import com.sun.org.apache.bcel.internal.generic.DREM;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +23,7 @@ public class MyDriver {
         switch (browser) {
             case "firefox":
                 System.setProperty("webdriver.gecko.driver", getFireFoxDriverPath());
-                FirefoxDriverManager.firefoxdriver().getDownloadedVersion();
+                driver = new FirefoxDriver();
                 break;
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", getChromeDriverPath());
