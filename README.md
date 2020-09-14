@@ -11,6 +11,23 @@ Once the tools mentioned above are installed and ready to use, clone this repo b
 git clone git@github.com:MakingSense/automation_java.git
 ```
 
+# Setup environment variables
+For this project, you will have to set some environments variables in your IDE so that you can successfully run the tests.
+Those variables are (and the exact names should be used):
+* URL_ENV
+* CHROME_DRIVER_PATH
+* FIREFOX_DRIVER_PATH
+* CHROME_DRIVER_PATH_WIN
+* FIREFOX_DRIVER_PATH_WIN
+
+To set up those variables you need to: 
+1. Open the project's configuration where says "Edit Configurations..." (in the Main toolbar). 
+2. Once the configuration panel is displayed, tap on the "Browse" icon in the "Environment variables"
+3. Add the above mentined variables as name and the full path to the resources folder (including the name of the file, i.e. geckodriver.exe) as value
+4. Tap on ok and close the panel
+5. Now the variables will be replaced with you environments values and the tests can be executed
+
+
 # Install the maven dependencies
 The dependencies are listed in the pom.xml file. However, run this command to make sure that everything is installed correctly and compile
 the maven project without any errors. For that, you should use the following command (once the project has been cloned in your machine):
