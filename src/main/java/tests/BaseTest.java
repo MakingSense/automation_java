@@ -7,6 +7,7 @@ import utils.Logger;
 import utils.MyDriver;
 
 import static utils.Config.getChrome;
+import static utils.Config.getFirefox;
 
 public abstract class BaseTest {
 
@@ -21,8 +22,11 @@ public abstract class BaseTest {
     public void setUp() {
 
         Logger.printInfo("Before test suite started");
-
+        /**
+         * These lines of code show you how to call the chrome (or firefox) binary to execute the tests
+         */
         driver = new MyDriver(getChrome());
+        //driver = new MyDriver(getFirefox());
         landingPage = new LandingPage(driver.getDriver());
     }
 
